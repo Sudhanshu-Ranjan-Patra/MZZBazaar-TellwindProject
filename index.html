@@ -1,11 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    My 1st github reposetry 
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="text-2xl font-bold text-blue-600">
+        MZZ Bazaar
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="space-x-10 hidden md:flex">
+        <a href="#" class="text-gray-600 hover:text-blue-600">Home</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Features</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Pricing</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </div>
+
+      <div class=" md:block w-10 ">
+            <img src="/image/SRP.jpeg" alt="" class=" rounded-xl">
+          </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+   <section class="bg-gray-60 py-16">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
+
+      <!-- Left side: Text content -->
+       <div class="md:w-1/2 space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800">
+          Grow your business with MyProduct 🚀
+        </h1>
+        <p class="text-gray-600 text-lg">
+          Our product helps you increase your productivity and reach new heights. Join us today and make a difference!
+        </p>
+        <div>
+          <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 ">
+            Get Started
+          </a>
+        </div>
+       </div>
+
+      <!-- Right side: Image -->
+       <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="/image/Hero-image.jpeg" alt="Hero Image" class="rounded-lg shadow-lg md:mx-10">
+       </div>
+    </div>
+
+   </section>
+
+   <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h1 class="text-3xl font-bold text-gray-800 mb-12">
+        Amazing Features
+      </h1>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-x-2">
+        <!-- Feature 1 -->
+          <div class="bg-gray-80 p-8 rounded-xl shadow-lg">
+            <div class="text-4xl text-blue-600 mb-4">
+              🚀
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Boost Productivity</h3>
+            <img src="image/Boost-productivity-image.avif" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover">
+            <p class="text-gray-600 pt-3">
+              Our product helps you streamline your workflow, saving you time and increasing productivity.
+            </p>
+          </div>
+
+        <!-- Feature 2 -->
+          <div class="bg-gray-80 p-8 rounded-xl shadow-lg">
+            <div class="text-4xl text-blue-600 mb-4">
+              🧩
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Advanced Analytics</h3>
+            <img src="image/Advanced-Analytics-image.webp" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover">
+            <p class="text-gray-600 pt-3">
+              Get insightful data that helps you make smarter business decisions with our advanced analytics tools.
+            </p>
+          </div>
+
+        <!-- Feature 3 -->
+         <div class="bg-gray-80 p-8 rounded-xl shadow-lg ">
+          <div class="text-4xl text-blue-600 mb-4">
+            💼
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Easy Collaboration</h3>
+          <img src="image/Easy-Collaboration-image.jpg" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover">
+          <p class="text-gray-600 pt-3">
+            Collaborate seamlessly with your team using our intuitive tools, making team communication a breeze.
+          </p>
+         </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl mb-12 text-gray-800 font-bold">What Our Users Say ?</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="text-gray-600 mb-4">
+              "MyProduct completely transformed the way I work. I can’t imagine going back!"
+            </p>
+            <h1 class="font-semibold text-gray-800">Tapaswini GIFTian</h1>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="text-gray-600 mb-4">
+              "Incredible experience! The features are very user-friendly and efficient."
+            </p>
+            <h1 class="font-semibold text-gray-800">Nitish IITian</h1>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <p class="text-gray-600 mb-4">
+              "Highly recommended! Great support team and easy setup."
+            </p>
+            <h1 class="font-semibold text-gray-800">TiNa</h1>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="bg-sky-500 py-8 mt-16 footer-rounded">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+        
+        <!-- Left Side -->
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-100 hover:text-sky-300 ">Privacy Policy</a>
+          <a href="#" class="text-gray-100 hover:text-sky-300 ">Terms of Service</a>
+          <a href="#" class="text-gray-100 hover:text-sky-300 ">Contact</a>
+        </div>
+
+         <!-- Right Side -->
+          <div class="text-gray-100 mb-4 md:mb-0">
+            © 2025 MyProduct. All rights reserved.
+          </div>
+      </div>
+    </footer>
 </body>
+
 </html>

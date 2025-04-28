@@ -1,3 +1,7 @@
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.footer-rounded {
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+  }
