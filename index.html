@@ -21,7 +21,7 @@
   <nav class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
       <!-- Logo -->
-      <div class="text-2xl font-bold text-blue-600">
+      <div class="text-2xl font-bold text-sky-400 hover:text-blue-400 hover:transform hover:scale-105 transition-transform duration-300 hover:rotate-2">
         <a href="/">MZZ Bazaar</a>
       </div>
 
@@ -36,39 +36,47 @@
       </div>
 
       <!-- Horizontal menu for desktop -->
-      <div class="hidden md:flex space-x-6 text-gray-600">
-        <a href="#home" class="hover:text-blue-600">Home</a>
-        <a href="#features" class="hover:text-blue-600">Features</a>
-        <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
-        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      <div class="hidden md:flex space-x-8 text-gray-600 ">
+        <a href="#Home" class="hover:text-sky-400 hover:transform hover:scale-110 transition-transform duration-300">Home</a>
+        <a href="#Features" class="hover:text-sky-400 hover:transform hover:scale-110 transition-transform duration-300">Features</a>
+        <a href="#Pricing" class="hover:text-sky-400 hover:transform hover:scale-110 transition-transform duration-300">Pricing</a>
+        <a href="#Contact" class="hover:text-sky-400 hover:transform hover:scale-110 transition-transform duration-300">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Right-side drawer -->
-  <div id="mobile-menu"
-    class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-sky-300 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
     <div class="p-6 space-y-4">
       <!-- Close Button -->
-      <button id="close-menu" class="text-gray-700 float-right" title="Close-btn">
+      <button id="close-menu-1" class="text-gray-700 float-right hover:transform hover:sla" title="Close-btn">
         ✕
       </button>
       <!-- Links -->
       <nav class="mt-8 space-y-4 text-gray-700 font-medium">
-        <a href="#home" class="block hover:text-blue-600">Home</a>
-        <a href="#features" class="block hover:text-blue-600">Features</a>
-        <a href="#testimonials" class="block hover:text-blue-600">Testimonials</a>
-        <a href="#contact" class="block hover:text-blue-600">Contact</a>
+        <a href="#Home" class="block hover:text-gray-100 hover:transform hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Home</a>
+        <a href="#Features" class="block hover:text-gray-100 hover:transform hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Features</a>
+        <a href="#Pricing" class="block hover:text-gray-100 hover:transform hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Pricing</a>
+        <a href="#Contact" class="block hover:text-gray-100 hover:transform hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">Contact</a>
       </nav>
+      <div class="fixed bottom-0 left-0 w-full justify-center p-4 bg-sky-300 ">
+        <span class="text-gray-700 hover:text-gray-100 hover:transform hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] ">
+          <a href="#" class="block">Profile</a>
+        </span>
+        <span class="text-gray-700 hover:text-gray-100 hover:transform hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] ">
+          <a href="#" class="block">Setting</a>
+        </span>
+      </div>
     </div>
   </div>
-
+  <!-- Backdrop -->
+  <div id="backdrop" class="fixed insert-0 bg-black bg-opacity-50 hidden z-40 md:hidden "></div>
 
   <!-- Right-side drawer -->
    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-text-100 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
     <div class="p-6 space-y-4">
       <!-- Close Button -->
-       <button title="cut" class="ext-gray-700 float-right" id="close-menu">
+       <button title="cut" class="ext-gray-700 float-right" id="close-menu-2">
         ✕
        </button>
       <!-- Links -->
@@ -116,7 +124,7 @@
       <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
         Join thousands of happy users who are already using our solution to grow faster and smarter.
       </p>
-      <a href="#" class="inline-block bg-white text-sky-500 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition" data-aos="zoom-in-up" data-aos-delay="200">
+      <a href="#" class="inline-block bg-white text-sky-500 font-semibold px-6 py-3 rounded-full transform hover:bg-sky-300 hover:text-white hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.3)] hover:shadow-lg hover:scale-105 transition-transform  duration-300" data-aos="zoom-in-up" data-aos-delay="200">
         Get Started Now
       </a>
     </div>
@@ -124,43 +132,43 @@
 
    <section class="py-12 bg-white" id="Features">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <h1 class="text-3xl font-bold text-gray-800 mb-12">
-        Amazing Features
+      <h1 class="text-3xl font-bold text-gray-800 mb-12 hover:text-sky-400 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">
+       <a href="#Features">Amazing Features</a> 
       </h1>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 space-x-2">
         <!-- Feature 1 -->
           <div class="bg-gray-80 p-8 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-            <div class="text-4xl text-blue-600 mb-4">
+            <div class="text-4xl text-blue-600 mb-4 hover:transform hover:scale-125 transition-transform duration-300 hover:rotate-6 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.3)] ">
               🚀
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Boost Productivity</h3>
-            <img src="image/Boost-productivity-image.avif" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover">
-            <p class="text-gray-600 pt-3">
+            <img src="image/Boost-productivity-image.avif" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover hover:scale-105 transition-transform  duration-300">
+            <p class="text-gray-600 pt-3 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] hover:text-sky-700 duration-300">
               Our product helps you streamline your workflow, saving you time and increasing productivity.
             </p>
           </div>
 
         <!-- Feature 2 -->
           <div class="bg-gray-80 p-8 rounded-xl shadow-lg" data-aos="zoom-in" data-aos-delay="100">
-            <div class="text-4xl text-blue-600 mb-4">
+            <div class="text-4xl text-blue-600 mb-4 hover:transform hover:scale-125 transition-transform duration-300 hover:rotate-6 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.3)] ">
               🧩
             </div>
             <h3 class="text-xl font-semibold text-gray-800 mb-2">Advanced Analytics</h3>
-            <img src="image/Advanced-Analytics-image.webp" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover">
-            <p class="text-gray-600 pt-3">
+            <img src="image/Advanced-Analytics-image.webp" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover hover:scale-105 transition-transform duration-300">
+            <p class="text-gray-600 pt-3 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] hover:text-sky-700 duration-300">
               Get insightful data that helps you make smarter business decisions with our advanced analytics tools.
             </p>
           </div>
 
         <!-- Feature 3 -->
          <div class="bg-gray-80 p-8 rounded-xl shadow-lg " data-aos="zoom-in" data-aos-delay="100">
-          <div class="text-4xl text-blue-600 mb-4">
+          <div class="text-4xl text-blue-600 mb-4 hover:transform hover:scale-125 transition-transform duration-300 hover:rotate-6 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.3)] ">
             💼
           </div>
           <h3 class="text-xl font-semibold text-gray-800 mb-2">Easy Collaboration</h3>
-          <img src="image/Easy-collaboration.jpeg" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover">
-          <p class="text-gray-600 pt-3">
+          <img src="image/Easy-collaboration.jpeg" alt="Boost Productivity" class="rounded-lg shadow-lg md:mx-1 mb-2 h-40 w-full object-cover hover:scale-105 transition-transform duration-300">
+          <p class="text-gray-600 pt-3 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)] hover:text-sky-700 duration-300">
             Collaborate seamlessly with your team using our intuitive tools, making team communication a breeze.
           </p>
          </div>
@@ -171,19 +179,21 @@
    <!-- Testimonials Section -->
     <section class="py-16 bg-gray-50" id="Pricing">
       <div class="max-w-7xl mx-auto px-4 text-center">
-        <h2 class="text-3xl mb-12 text-gray-800 font-bold">What Our Users Say ?</h2>
+        <h2 class="text-3xl mb-12 text-gray-800 font-bold hover:text-sky-400 hover:[text-shadow:_2px_2px_4px_rgba(0,0,0,0.2)]">
+          <a href="#Pricing">What Our Users Say ?</a>
+        </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Testimonial 1 -->
           <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4 transform hover:scale-105 transition-transform duration-300">
               "MyProduct completely transformed the way I work. I can’t imagine going back!"
             </p>
             <h1 class="font-semibold text-gray-800">Tapaswini GIFTian</h1>
           </div>
           <!-- Testimonial 2 -->
           <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4 transform hover:scale-105 transition-transform duration-300">
               "Incredible experience! The features are very user-friendly and efficient."
             </p>
             <h1 class="font-semibold text-gray-800">Nitish IITian</h1>
@@ -191,7 +201,7 @@
           
           <!-- Testimonial 3 -->
           <div class="bg-white p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4 transform hover:scale-105 transition-transform duration-300">
               "Highly recommended! Great support team and easy setup."
             </p>
             <h1 class="font-semibold text-gray-800">TiNa</h1>
@@ -230,23 +240,30 @@
       // ✅ Animate On Scroll
       AOS.init({
         duration: 1000,
-        once: true, // triggers only once when entering viewport
+        once: true, 
       });
     
       // Mobile Navbar Toggle
       const menuBtn = document.getElementById('menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
-      const closeMenu = document.getElementById('close-menu');
-    
-      menuBtn?.addEventListener('click', () => {
-        mobileMenu?.classList.remove('translate-x-full');
-        document.body.classList.add('overflow-hidden'); // prevent background scroll
-      });
-    
-      closeMenu?.addEventListener('click', () => {
-        mobileMenu?.classList.add('translate-x-full');
+      const closeMenu = document.getElementById('close-menu-1') || document.getElementById('close-menu-2');
+      const backdrop = document.getElementById('backdrop');
+
+      const openMenu = () => {
+        mobileMenu.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      };
+
+      const closeMobileMenu = () => {
+        mobileMenu.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
         document.body.classList.remove('overflow-hidden');
-      });
+      };
+    
+      menuBtn?.addEventListener('click', openMenu);
+      closeMenu?.addEventListener('click', closeMobileMenu);
+      backdrop?.addEventListener('click', closeMobileMenu);
     
       // Scroll-to-top Button
       const scrollBtn = document.getElementById('scrollToTopBtn');
